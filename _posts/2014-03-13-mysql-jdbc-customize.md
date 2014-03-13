@@ -1,5 +1,4 @@
 ---
----
 layout: post
 title: Customize MySQL JDBC Driver
 description: "This is how to customize mysql jdbc driver."
