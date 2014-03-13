@@ -19,7 +19,7 @@ share: true
 
 1. 从[Oracle官方网站](http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.29.zip)下载最新版的MySQL JDBC Driver.
 2. 本地解压后，目录如下：
-{% highlight %}
+{% highlight html %}
 |--docs
     |--connector-html
     |--connector-j.pdf
@@ -43,7 +43,7 @@ share: true
 
 1. 由于MySQL需要兼容JDK不同的版本，所以，如果你直接使用`ant`编译时无法编译通过的.
 2. 你需要把你的系统环境的JDK版本设置成`JDK1.5`，在配置环境变量之前，你需要安装`JDK1.5`
-{% highlight %}
+{% highlight html %}
 JAVA_HOME:D:\Program Files (x86)\Java\jdk1.5.0_22
 CLASSPATH:.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar
 PATH:%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
@@ -72,7 +72,7 @@ PATH:%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
 ### 上传至私服
 
 可以将编译后的MySQL版本上传至私服中，以下是将Jar上传至`Nexus私服`的例子
-{% highlight %}
+{% highlight html %}
 mvn deploy:deploy-file 
     -DgroupId=mysql 
     -DartifactId=mysql-connector-java 
