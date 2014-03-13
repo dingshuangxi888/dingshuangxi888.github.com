@@ -18,41 +18,41 @@ share: true
 
 1. 从[Oracle官方网站](http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.29.zip)下载最新版的MySQL JDBC Driver.
 2. 本地解压后，目录如下：
-  {% highlight html %}
-  |--docs
-      |--connector-html
-      |--connector-j.pdf
-      |--README.txt
-  |--src
-      |--com
-      |--doc
-      |--lib
-      |--org
-      |--testsuite
-  |--mysql-connector-java-5.1.29-bin.jar
-  |--build.xml
-  |--CHANGES
-  |--README
-  |--README
-  |--README.txt
-  {% endhighlight %}
+{% highlight html %}
+|--docs
+    |--connector-html
+    |--connector-j.pdf
+    |--README.txt
+|--src
+    |--com
+    |--doc
+    |--lib
+    |--org
+    |--testsuite
+|--mysql-connector-java-5.1.29-bin.jar
+|--build.xml
+|--CHANGES
+|--README
+|--README
+|--README.txt
+{% endhighlight %}
 2. 在解压目录中，`build.xml`是与ant编译打包相关的文件，`src/com`是与MySQL相关的源代码，`src/lib`是MySQL源代码依赖的库
 
 ### 如何编译
 
 1. 由于MySQL需要兼容JDK不同的版本，所以，如果你直接使用`ant`编译时无法编译通过的.
 2. 你需要把你的系统环境的JDK版本设置成`JDK1.5`，在配置环境变量之前，你需要安装`JDK1.5`
-  {% highlight html %}
-  JAVA_HOME:D:\Program Files (x86)\Java\jdk1.5.0_22
-  CLASSPATH:.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar
-  PATH:%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
-  {% endhighlight %}
+{% highlight html %}
+JAVA_HOME:D:\Program Files (x86)\Java\jdk1.5.0_22
+CLASSPATH:.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar
+PATH:%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
+{% endhighlight %}
 3. 为了兼容JDK1.6版本，你需要同时安装`JDK1.6`，并打开`build.xml`文件，修改配置如下：
-  {% highlight xml %}
-  <property name="com.mysql.jdbc.java6.java"  value="D:/Program Files (x86)/Java/jdk1.6.0_38/bin/java.exe" />
-  <property name="com.mysql.jdbc.java6.javac" value="D:/Program Files (x86)/Java/jdk1.6.0_38/bin/javac.exe" />
-  <property name="com.mysql.jdbc.java6.rtjar" value="D:/Program Files (x86)/Java/jdk1.6.0_38/jre/lib/rt.jar" />
-  {% endhighlight %}
+{% highlight xml %}
+<property name="com.mysql.jdbc.java6.java"  value="D:/Program Files (x86)/Java/jdk1.6.0_38/bin/java.exe" />
+<property name="com.mysql.jdbc.java6.javac" value="D:/Program Files (x86)/Java/jdk1.6.0_38/bin/javac.exe" />
+<property name="com.mysql.jdbc.java6.rtjar" value="D:/Program Files (x86)/Java/jdk1.6.0_38/jre/lib/rt.jar" />
+{% endhighlight %}
 4. 如果修改代码需要依赖其他类库的话，只需要把`Jar包`放到`src/lib`目录下即可，`Jar包`必须编译成`JDK1.5`版本，如果是`JDK1.6`回报错误.
 5. 打开`cmd`， 切换到MySQL工程目录，运行`ant`命令，查看编译结果.
 6. 编译成功后，在MySQL工程目录下会新增`target`文件夹，编译后的jar包就在这个目录下.
@@ -72,14 +72,14 @@ share: true
 ### 上传至私服
 
 可以将编译后的MySQL版本上传至私服中，以下是将Jar上传至`Nexus私服`的例子
-  {% highlight html %}
-  mvn deploy:deploy-file 
-      -DgroupId=mysql 
-      -DartifactId=mysql-connector-java 
-      -Dversion=5.1.29 
-      -Dpackaging=jar 
-      -Dfile=./build/mysql-connector-java-5.1.29-SNAPSHOT/mysql-connector-java-5.1.29-SNAPSHOT-bin.jar 
-      -Dclassifier=microscope-1-2-3-04 
-      -Dtype= -Durl=http://10.101.0.2:8081/nexus/content/repositories/thirdparty/ 
-      -DrepositoryId=thirdparty
-  {% endhighlight %}
+{% highlight html %}
+mvn deploy:deploy-file 
+    -DgroupId=mysql 
+    -DartifactId=mysql-connector-java 
+    -Dversion=5.1.29 
+    -Dpackaging=jar 
+    -Dfile=./build/mysql-connector-java-5.1.29-SNAPSHOT/mysql-connector-java-5.1.29-SNAPSHOT-bin.jar 
+    -Dclassifier=microscope-1-2-3-04 
+    -Dtype= -Durl=http://10.101.0.2:8081/nexus/content/repositories/thirdparty/ 
+    -DrepositoryId=thirdparty
+{% endhighlight %}
