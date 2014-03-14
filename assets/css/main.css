@@ -373,7 +373,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: monospace;
+  font-family: 'Courier';
 }
 
 p code,
@@ -674,7 +674,7 @@ pre::-webkit-scrollbar-thumb:horizontal {
 
 .CodeRay {
   margin-bottom: 1.5em;
-  font-family: monospace;
+  font-family: 'Courier';
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 2.1667;
