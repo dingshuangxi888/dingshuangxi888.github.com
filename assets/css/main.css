@@ -1514,7 +1514,7 @@ svg:not(:root) {
 .dl-menuwrapper li a {
   position: relative;
   display: block;
-  padding: 15px 20px;
+  padding: 12px 20px;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 300;
