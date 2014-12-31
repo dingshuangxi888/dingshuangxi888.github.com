@@ -3,7 +3,7 @@ layout: post
 title: 干货收藏
 description: "所有阅读过的干货列表."
 modified: 2014-03-13
-tags: [mysql jdbc customize, mysql, jdbc]
+tags: [reading list]
 image:
   feature: abstract-1.jpg
   credit: dargadgetz
