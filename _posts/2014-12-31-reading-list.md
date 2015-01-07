@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reading list
+title: Reading List
 description: "所有阅读过的干货列表."
 modified: 2014-03-13
 tags: [reading list]
@@ -28,5 +28,5 @@ share: true
 5. [Netty系列之Netty并发编程分析](http://www.infoq.com/cn/articles/netty-concurrent-programming-analysis)
 6. [Netty系列之Netty百万级推送服务设计要点](http://www.infoq.com/cn/articles/netty-million-level-push-service-design-points)
 
-### 分布式
-1. [分布式系统阅读清单](http://dancres.github.io/Pages/)
+### Distributed Systems
+1. [A Distributed Systems Reading List](http://dancres.github.io/Pages/)
