@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 干货收藏
+title: Reading list
 description: "所有阅读过的干货列表."
 modified: 2014-03-13
 tags: [reading list]
@@ -16,3 +16,6 @@ share: true
 
 ### JVM
 [JVM Attach机制实现](http://lovestblog.cn/blog/2014/06/18/jvm-attach/)
+
+### Java Concurrent
+[Java多线程发展简史](http://www.raychase.net/698)
