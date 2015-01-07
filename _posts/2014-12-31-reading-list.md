@@ -27,3 +27,6 @@ share: true
 4. [Netty系列之Netty 服务端创建](http://www.infoq.com/cn/articles/netty-server-create)
 5. [Netty系列之Netty并发编程分析](http://www.infoq.com/cn/articles/netty-concurrent-programming-analysis)
 6. [Netty系列之Netty百万级推送服务设计要点](http://www.infoq.com/cn/articles/netty-million-level-push-service-design-points)
+
+### 分布式
+1. [分布式系统阅读清单](http://dancres.github.io/Pages/)
