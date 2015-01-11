@@ -30,3 +30,6 @@ share: true
 
 ### Distributed Systems
 1. [A Distributed Systems Reading List](http://dancres.github.io/Pages/)
+
+### Gradle
+1. [Gradle在大型Java项目上的应用](http://www.infoq.com/cn/articles/Gradle-application-in-large-Java-projects/)
