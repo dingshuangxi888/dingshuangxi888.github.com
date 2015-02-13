@@ -33,3 +33,9 @@ share: true
 
 ### Gradle
 1. [Gradle在大型Java项目上的应用](http://www.infoq.com/cn/articles/Gradle-application-in-large-Java-projects/)
+
+### ElasticSearch
+1. [Elasticsearch 权威指南](http://fuxiaopang.gitbooks.io/learnelasticsearch/content/index.html)
+
+### Docker
+1. [Docker中文指南](http://www.widuu.com/chinese_docker/)
